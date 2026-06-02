@@ -35,3 +35,7 @@ Then open the local URL in your browser.
 - The application uses a fail-fast approach for required DOM elements. Since the HTML and JavaScript are part of the same codebase and shipped together, repetitive null checks for every DOM lookup were intentionally omitted.
 - The camera stream is explicitly stopped after snapshot capture or when an error occurs, preventing the camera from remaining active unnecessarily.
 - No external libraries or frameworks are used.
+
+## Demo
+
+A short demo recording is available in `demo.mov`.
