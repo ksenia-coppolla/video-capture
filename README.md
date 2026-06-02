@@ -2,7 +2,7 @@
 
 A small vanilla JavaScript application that requests camera access, displays a live preview, runs a countdown, and captures a snapshot from the video stream.
 
-// todo add a live demo link
+[Live Demo](https://video-capture-one.vercel.app/)
 
 ## Features
 
