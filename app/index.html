@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video capture</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90' fill='%23fff'%3E&#128248;%3C/text%3E%3C/svg%3E"
+      type="image/svg+xml"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer type="module" src="./script.js"></script>
+  </head>
+  <body>
+    <main class="app-container">
+      <section class="instructions">
+        <h1 class="instructions-header">Video capture</h1>
+        <p class="instructions-description">
+          Click the button to allow camera access. A photo will be taken
+          automatically after a few seconds.
+        </p>
+        <button id="js-start-button" class="start-button">Start</button>
+      </section>
+
+      <div class="camera-workspace">
+        <div id="js-video-container" class="media-box video-box" hidden>
+          <video
+            id="js-preview"
+            class="video"
+            autoplay
+            playsinline
+            muted
+          ></video>
+          <div
+            id="js-countdown"
+            class="countdown-overlay"
+            aria-live="polite"
+            hidden
+          >
+            <span class="countdown-text">Taking snapshot in</span>
+            <span id="js-countdown-number" class="countdown-number">5</span>
+          </div>
+        </div>
+
+        <div id="js-errors" class="errors-box" role="alert" hidden></div>
+
+        <div id="js-image-container" class="media-box image-box" hidden>
+          <img id="js-snapshot" class="image" alt="Captured photo" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
